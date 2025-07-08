@@ -3,8 +3,7 @@ import { Outlet } from "react-router-dom";
 import { useSelector } from 'react-redux';
 import Sidebar from "@/components/organisms/Sidebar";
 import { AuthContext } from "../../App";
-import { ApperIcon } from "@/components/ApperIcon";
-
+import ApperIcon from "@/components/ApperIcon";
 const Layout = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const { logout } = useContext(AuthContext);
